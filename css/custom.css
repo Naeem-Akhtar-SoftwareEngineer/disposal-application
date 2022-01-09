@@ -1,0 +1,1016 @@
+/*-------------------------------
+Custom Css
+-------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #868686;
+    background-color: #f1f1f1;
+}
+body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    color: #868686;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body strong {
+    font-family: 'Roboto', sans-serif;
+    color: #3a4552;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span,
+strong span{
+    font-weight: 700;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+strong a {
+    color: #3a4552;
+}
+body h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 0 25px;
+    line-height: 40px;
+}
+body h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+body h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.tnit-wrapper,
+.tnit-main-content {
+    width: 100%;
+    position: relative;
+}
+figure {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    margin: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+ul ul,
+ol ol {
+    padding-left: 30px;
+}
+.tnit-wrapper {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    background-color: #f1f1f1;
+    z-index: 999;
+}
+.tnit-wrapper a,
+.tnit-wrapper a:hover,
+.tnit-wrapper a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.tnit-main-content {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+section{
+    float: left;
+    width: 100%;
+}
+
+.btn-groups .btn-stlye{
+    margin: 0 15px;
+}
+.btn-stlye{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    min-width: 200px;
+    display: inline-block;
+    padding: 18px 30px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 11;
+    vertical-align: middle;
+}
+.btn-stlye:hover{
+    color: #000;
+}
+.btn-effect{
+    position: relative;
+    overflow: hidden;
+    z-index: 11;
+}
+.btn-stlye::before,.btn-effect:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.1);
+    z-index: -1;
+    position: absolute;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    transform-origin: 0 0;
+}
+.btn-stlye:hover:before,.btn-effect:hover:before{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.btn-stlye::after,.btn-effect:after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    border-right: 10px double #ead040;
+    bottom: 0px;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: rotate(25deg) translateY(-100px);
+    -moz-transform: rotate(25deg) translateY(-100px);
+    transform: rotate(25deg) translateY(-100px);
+    transform-origin: 0 0;
+}
+.btn-stlye:hover:after,.btn-effect:hover:after{
+    bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+     -webkit-transform: rotate(25deg) translateY(-20px);
+    -moz-transform: rotate(25deg) translateY(-20px);
+    transform: rotate(25deg) translateY(-20px);
+    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+}
+.btn-groups .btn-stlye:hover:after{
+     -webkit-transform: rotate(25deg) translateY(-50px);
+    -moz-transform: rotate(25deg) translateY(-50px);
+    transform: rotate(25deg) translateY(-50px);
+}
+.heading-outer{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.heading-outer h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+}
+/*====================================*/
+/*Services Section Css */
+/*====================================*/
+.tnit-services-section{
+
+}
+.trash-section{
+    position: relative;
+    z-index: 11;
+}
+.trash-section:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 100%;
+    height: 270px;
+    background-color: #aca9b0;
+    z-index: -1; 
+}
+.service-inner-banner{
+    float: left;
+    width: 100%;
+    padding: 28px 0;
+    background-color: #e4e4e4;
+    text-align: center;
+}
+.service-inner-banner h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+}
+.services-order-inner{
+    float: left;
+    width: 100%;
+    padding: 125px 0 130px;
+    text-align: center;
+    background: url('../images/disposal-truck-image.jpg') no-repeat top center;
+    background-size: 100%;
+    min-height: 400px;
+}
+.services-order-inner h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 0 35px;
+}
+.form-address{
+    width: 600px;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+}
+.form-address input[type="text"]{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000;
+    padding: 18px 45px;
+    border: none;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+}
+.form-address ::-webkit-input-placeholder,form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+}
+.form-address ::-moz-placeholder,form ::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+.form-address :-ms-input-placeholder,form:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+.form-address :-moz-placeholder,form :-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+.form-address .btn-continue{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #000;
+    padding: 18px 30px;
+    display: inline-block;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.form-address .marker-icon{
+    width: 22px;
+    height: 25px;
+    background: url('../images/icon-marker.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+/* 
+Services Middle Row Css */
+.service-middle-row{
+    float: left;
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+}
+.btn-back-outer{
+    padding-top: 30px;
+    text-align: center;
+}
+.btn-back{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #000;
+    padding-left: 24px;
+    position: relative;
+    display: inline-block;
+}
+.btn-back:before{
+    content:"\f137";
+    font-family:'FontAwesome';
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.btn-back:hover:before{
+    left: -5px;
+}
+
+/* 
+Services Product Row Css */
+.product-item{
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 28px;
+}
+.product-thumb{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 30px;
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.10);*/
+    position: relative;
+    z-index: 11;
+}
+.product-item:hover .product-thumb{
+    box-shadow: 0 0 60px rgba(0,0,0,0.10);
+}
+.product-thumb:hover img{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.product-thumb img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.product-thumb .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    z-index: 1;
+}
+.tnit-pro-hover_v1{
+    position: relative;
+    overflow: hidden;
+    z-index: 11;
+}
+
+.tnit-pro-hover_v1 .caption{
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+}
+.tnit-pro-hover_v1 .caption:before{
+    content: '\f053';
+    font-family:'FontAwesome';
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #fbcf26;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.tnit-pro-hover_v1 .caption:after{
+    content: '\f054';
+    font-family:'FontAwesome';
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #fbcf26;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.tnit-pro-hover_v1:hover .caption:before{
+    left: 25px;
+    top: 25px;
+    transition-delay: 0.4s;
+    webkit-transition-delay: 0.4s;
+    moz-transition-delay: 0.4s;
+}
+.tnit-pro-hover_v1:hover .caption:after{
+    right: 25px;
+    bottom: 25px;
+    transition-delay: 0.4s;
+    webkit-transition-delay: 0.4s;
+    moz-transition-delay: 0.4s;
+}
+
+.product-thumb .btn-check{
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #000;
+    z-index: 11;
+}
+.tnit-pro-hover_v1 .caption .text-holder{
+    width: 100%;
+}
+.tnit-pro-hover_v1 .caption .text-holder h3{
+    color: #fff;
+}
+.product-item .text-holder{
+    text-align: center;
+}
+.product-item h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    color: #000;
+    margin: 0 0 15px;
+}
+.product-item .btn-select,.btn-select{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #fff;
+    min-width: 140px;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+}
+.tnit-pro-hover_v1 .btn-select{
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #222
+}
+.product-item .btn-select:hover,.btn-select:hover{
+    color: #000;
+}
+.btn-gallon{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    background-color: #f64d4d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 140px;
+}
+.btn-gallon:hover{
+    color: #fff;
+}
+.price-title small{
+    color: #000;
+}
+.product-item .text-holder p{
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 0 12px;
+    color: #000;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+#gmap_canvas{
+    width: 100%;
+    height: 400px;
+}
+.tnit-info-outer{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.tnit-info-outer h3{
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.tnit-info-outer .inner-holder{
+    float: left;
+    width: 100%;
+    margin-bottom: 7px;
+}
+.tnit-disposal-form input[type="text"],.tnit-disposal-form input[type="email"],.tnit-disposal-form input[type="tel"]{
+    font-size: 16px;
+    line-height: 42px;
+    height: 42px;
+    padding: 0 10px;
+    color: #81878f;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+.btn-checkout,.btn-apply{
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+    border: none;
+    min-width: 140px;
+    display: inline-block;
+    padding: 13px 25px;
+}
+/*
+Calendar Css */
+.tnit-calendar-info-from{
+    padding: 0;
+}
+.tnit-calendar{
+    width: 100%;
+    float: left;
+    padding-right: 0px;
+}
+.tnit-info-outer h4{
+    margin-bottom: 10px;
+}
+.tnit-calendar .ui-datepicker{
+    width: 100%;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-header{
+    padding: 10px 40px;
+    background-color: #efefef;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+.tnit-calendar .ui-datepicker-calendar{
+    height: 100%;
+    margin: 0;
+}
+.tnit-calendar .ui-widget.ui-widget-content{
+    padding: 0;
+}
+.tnit-calendar .ui-datepicker th{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #1e2125;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.tnit-calendar .ui-datepicker td span,.tnit-calendar .ui-datepicker td a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 18px 10px;
+    color: #000;
+    border: none;
+    background-color: #fcf1d3;
+}
+.tnit-calendar .ui-datepicker td,.tnit-calendar .ui-datepicker td{
+    opacity: 1;
+}
+.tnit-calendar .ui-datepicker td.ui-datepicker-current-day{
+    opacity: 1;
+}
+.tnit-calendar .ui-datepicker td.ui-state-disabled{
+    opacity: 1;
+}
+.tnit-calendar .ui-datepicker td.ui-state-disabled a,.tnit-calendar .ui-datepicker td.ui-state-disabled span{
+    background-color: #f9f9f9;
+    color: #81878f;
+}
+.tnit-calendar .ui-datepicker td a.ui-state-active{
+    color: #000;
+}
+.tnit-date-info-listed{
+    margin: 0;
+    padding-top: 20px;
+}
+.tnit-date-info-listed li{
+    list-style: none;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-prev,.tnit-calendar .ui-datepicker .ui-datepicker-next{
+    top: 15px;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-prev{
+    left: 30px;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-next{
+    right: 30px;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-prev,.tnit-calendar .ui-datepicker .ui-datepicker-nex{
+    width: 30px;
+    height: 36px;
+    opacity: 1;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-next span{
+    background: url('../images/calender-next-img.jpg') top center;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    position: relative;
+    top: 0;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-prev span{
+    background: url('../images/calender-prev-img.jpg') top center;
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    position: relative;
+    top: 0;
+}
+/*.tnit-calendar .ui-datepicker .ui-datepicker-prev:hover{
+    background: url('../images/calender-prev-img.jpg') top center;
+}
+.tnit-calendar .ui-datepicker .ui-datepicker-nex:hover,.tnit-calendar .ui-datepicker .ul-datepicker-next-hover,.tnit-calendar .ui-datepicker .ul-datepicker-next-hover span{
+    background: url('../images/calender-next-img.jpg') top center !important;
+}*/
+.tnit-calendar .ui-datepicker  .ul-datepicker-next-hover{
+
+}
+.tnit-date-info-listed{
+    margin: 0;
+    text-align: left;
+}
+.tnit-date-info-listed li{
+    list-style: none;
+    padding: 15px 0 10px;
+    border-bottom: 1px solid #c1c1c1;
+}
+.tnit-date-info-listed li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.tnit-date-info-listed .date-info{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.date-info h3{
+    font-size: 24px;
+    color: #000000;
+    margin: 0 0 5px;
+}
+.date-info .date{
+    font-size: 26px;
+    font-weight: 400;
+    color: #f64d4d;
+}
+.date-info .btn-date-submit{
+    margin-top: 10px;
+}
+/*
+Checkout Css */
+.tnit-summary-box{
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+.summary-table h4{
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 6px;
+}
+.summary-table p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+}
+.summary-table .first-row{
+    border-bottom: 1px solid #dcdcdc;
+}
+.summary-table .first-row .col-6{
+    width: 60%;
+}
+.summary-table .col-4{
+    width: 33.33%;
+}
+.summary-table .col-2{
+    width: 20%;
+}
+.summary-table .col-5{
+    width: 40%;
+}
+.summary-table tr td{
+    padding: 15px 15px 15px 20px;
+}
+.summary-table .table-price{
+    font-size: 16px;
+    color: #000
+}
+.btn-edit,.btn-revise{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    min-width: 80px;
+    display: inline-block;
+}
+.btn-edit .fa,.btn-revise .fa{
+    color: #f64d4d;
+    margin-right: 4px;
+}
+.btn-add-services{
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    background-color: #f64d4d;
+    border-radius: 3px;
+}
+.sub-total-holder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-align: right;
+    padding: 18px 20px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
+}
+.sub-total-holder .total-price{
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    padding-left: 20px;
+}
+.tnit-summary-box .tnit-coupon-outer{
+    padding: 38px 20px;
+    text-align: right;
+}
+.tnit-coupon-outer .coupon{
+    font-size: 20px;
+    color: #000;
+    display: inline-block;
+    padding-right: 18px;
+}
+.tnit-coupon-outer .pre-coupon{
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    min-width: 230px;
+    padding: 0 20px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+.tnit-coupon-outer .total{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 25px;
+}
+.tnit-coupon-outer .total span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    display: inline-block;
+    padding-left: 10px;
+}
+.heading-outer.payment-info{
+    margin-bottom: 10px;
+}
+.heading-outer.payment-info h3{
+    margin-bottom: 14px;
+}
+.payment-info{
+    text-align: left;
+}
+.payment-info h3{
+    display: inline-block;
+}
+.payment-info .payment-listed{
+    display: inline-block;
+    margin: 0;
+    margin-left: 12px;
+}
+.payment-listed li{
+    list-style: none;
+    padding: 0 6px;
+    display: inline-block;
+}
+.inner-holder .form-check label{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.tnit-info-outer .btn-place-order{
+    display: block;
+    width: 100%;
+    background-color: #f64d4d;
+}
+/*
+Tabs Section Css */
+.tnit-tabs-outer{
+    float: left;
+    width: 100%;
+}
+.tab-navs-inner{
+    float: left;
+    width: 100%;
+    padding: 28px 0 20px;
+    background-color: #e4e4e4;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    text-align: center;
+}
+.tnit-tabs-outer .nav-tabs{
+    border: 0px;
+}
+.tnit-tabs-outer .nav-tabs > li{
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+.tnit-tabs-outer .nav-tabs > li.disabled a{
+    pointer-events: none;
+}
+.tnit-tabs-outer ul {
+    text-align: center;
+}
+.tnit-tabs-outer .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+.tnit-tabs-outer .nav-tabs > li > a{
+   border: 0px;   
+   border-radius: 0px;
+   cursor: pointer;
+}
+.tnit-tabs-nav .tab-list > a{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    width: 155px;
+    height: 60px;
+    padding-top: 16px;
+    padding-left: 12px;
+    text-align: left;
+    background: url('../images/tab-arrow-img.png') top center no-repeat;
+    background-size: 100%;
+    z-index: 11;
+    position: relative;
+    cursor: pointer;
+}
+.tnit-tabs-nav .tab-list a{
+    line-height: 16px;
+    color: #000;
+}
+.tab-list .number{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    width: 23px;
+    height: 23px;
+    color: #000;
+    background-color: #f1f1f1;
+    display: inline-block;
+    line-height: 23px;
+    margin: 0 2px 0 5px;
+    border-radius: 100%;
+    text-align: center;
+}
+.tab-list .off{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 12px;
+    opacity: 0;
+    visibility: hidden;
+}
+.tnit-tabs-nav .active .tab-list > a,.tnit-tabs-nav .selected.active .tab-list > a{
+    background: url('../images/tab-arrow-active-img.png') top center no-repeat;
+    background-size: 100%;
+}
+.btn-services a.btn-services-back,.tnit-tabs-nav li.selected .tab-list > a{
+    background: url('../images/tab-arrow-img-hover.png') top center no-repeat;
+    background-size: 100%;
+}
+.tnit-tabs-outer .tab-content{
+    float: left;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 48px 0 20px;
+}
+.tnit-tabs-nav .active .tab-list .off,.btn-services .btn-services-back .off,.tnit-tabs-nav li.selected .tab-list .off{
+    left: 43px;
+    opacity: 1;
+    visibility: visible;
+}
+.tnit-tabs-nav .active .tab-list .number,.btn-services a.btn-services-back .number{
+    background-color: #fff;
+}
+
+
+/* 
+Transition Css */
+.btn-stlye:before,a,:before,:after,.btn-back:before,.product-thumb img,.tnit-tabs-nav .tab-list a,.tab-list .off,.btn-select:hover,.btn-stlye::after,.btn-effect,.btn-effect:after,.btn-effect:before,.btn-select,.text-holder,
+.product-thumb .caption:before,.product-thumb{
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+
+
+
+/* 
+Updated Css */
+.btn-disabled,.btn-light.btn-disabled,.btn-select.btn-disabled,.product-item .btn-select.btn-disabled{
+    pointer-events: none;
+    cursor: default;
+    background-color: #fbac05;
+}
+.btn-disabled:before{
+    display: none;
+}
+.modal.tnit-modal_box{
+    max-height: 250px;
+    max-width: 500px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.10);
+    background-color: #fff;
+}
+.modal.tnit-modal_box .modal-content{
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    padding: 100px 40px 30px;
+}
+.tnit-modal_box .modal-content h4{
+    line-height: 30px;
+}
+.tnit-modal_box .modal-content h4 strong{
+    font-weight: 700;
+}

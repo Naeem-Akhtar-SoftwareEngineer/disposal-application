@@ -1,0 +1,20 @@
+/*=============================*/
+/*Color 1 CSS*/
+/*=============================*/
+.btn-stlye,.form-address .btn-continue,.btn-select:hover,.tnit-calendar .ui-datepicker td a.ui-state-active,.btn-select:hover,.tnit-pro-hover_v1 .btn-select{
+    background-color: #fbcf26;
+}
+.btn-back:hover{
+    color: #fbcf26;
+}
+.tnit-calendar .ui-datepicker td a.ui-state-active{
+    border-color: #fbcf26;
+}
+
+
+/*=============================*/
+/*Color Light CSS*/
+/*=============================*/
+.btn-light{
+    background-color: #fccf26;
+}
